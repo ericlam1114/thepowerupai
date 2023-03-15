@@ -44,16 +44,17 @@ const Hero = () => {
   return (
     <div className="container mx-auto h-screen flex flex-col md:flex-row justify-between items-center ">
       <div className="flex flex-col gap-5">
-        <p className="text-lg font-medium bg-green-100 text-green-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
-          Coming April 1
+        <p className="text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
+          Newsletter
         </p>
         <p className="text-6xl font-bold">
-          Podcast Advertising <br /> Made Simple{" "}
+          Startup Ideas, <br /> Fresh Weekly{" "}
         </p>
         <p className="text-base">
-          Join over one hundred podcasters signed up to monetize<br />
-          their podcasts with branded in-stream ads, the easy way.
+          Join 1,000+ entrepreneurs getting curated startup ideas in<br />
+         million dollar niches. Launch your empire this weekend.
         </p>
+        
         <form onSubmit={handleSubmit}>
           <div className="flex gap-5">
             <input
@@ -64,17 +65,22 @@ const Hero = () => {
               className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
             />
             <button className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium">
-              Notify Me{" "}
+              Subscribe{" "}
             </button>
           </div>
         </form>
+        <div className="">
+          <p className="body-md  pt-4 -mb-4 lg:body-lg text-center md:text-left opacity-60 md:lg:-mb-6">Read by ex-employees from</p>
+          <img src="/startupswhoread.png" className="max-w-sm lg:max-w-sm -pt-2 opacity-60 " alt="" />
+      
+        </div>
         {/* <div className="flex gap-5"> */}
           {/* <BsTwitter className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" /> */}
           {/* <RiInstagramFill className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
           {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
         {/* </div> */}
       </div>
-      <img src="/mic.png" className="max-w-sm lg:max-w-sm" alt="" />
+      <img src="/startupideas.png" className="w-3/5 lg:max-w-sm" alt="" />
     </div>
   );
 };

@@ -5,10 +5,10 @@ function Header() {
   return (
     <div>
       <Head>
-        <title>Podcast Advertising Made Simplee</title>
+        <title>Startup Ideas, Fresh Weekly</title>
 
-        <meta name="description" content="Podcast Advertising Made Simple" key="desc" />
-        <meta property="og:title" content="Podcast Advertising Made Simple" />
+        <meta name="description" content="Startup Ideas, Fresh Weekly" key="desc" />
+        <meta property="og:title" content="Startup Ideas, Fresh Weekly" />
         <meta
           property="og:description"
           content="Join over one hundred podcasters signed up to monetize
@@ -23,9 +23,9 @@ function Header() {
 
       <div class="flex flex-col justify-center -mt-8 items-center md:items-baseline -mb-10 md:-mb-56">
         <img
-          src="/logo.png"
+          src="/explodingideaslogo.png"
           className="max-w-sm scale-50 -mt-20 -mb-10"
-          alt=""
+          alt="explodingideas logo"
         />
       </div>
     </div>

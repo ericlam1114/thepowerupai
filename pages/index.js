@@ -7,7 +7,7 @@ import Header from '../component/Header'
 
 export default function Home() {
   return (
-   <div className='bg-gradient-to-r from-green-300 to-green-50'>
+   <div className='bg-gradient-to-r from-yellow-300 to-yellow-50'>
     <Header></Header>
 <Hero/>
    </div>
