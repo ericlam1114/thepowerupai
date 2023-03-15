@@ -42,7 +42,7 @@ const Hero = () => {
     }
   };
   return (
-    <div className="container mx-auto h-screen flex flex-col md:flex-row justify-between items-center ">
+    <div className="container mx-auto md:lg:h-screen flex flex-col md:flex-row justify-between items-center ">
       <div className="flex flex-col gap-5">
         <p className="text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           Newsletter
@@ -50,8 +50,8 @@ const Hero = () => {
         <p className="text-6xl font-bold">
           Startup Ideas, <br /> Fresh Weekly{" "}
         </p>
-        <p className="text-base">
-          Join 1,000+ entrepreneurs getting curated startup ideas in<br />
+        <p className="text-base md:lg:w-1/2">
+          Join 1,000+ entrepreneurs getting curated startup ideas in
          million dollar niches. Launch your empire this weekend.
         </p>
         
