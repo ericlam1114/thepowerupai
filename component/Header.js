@@ -11,12 +11,12 @@ function Header() {
         <meta property="og:title" content="Startup Ideas, Fresh Weekly" />
         <meta
           property="og:description"
-          content="Join over one hundred podcasters signed up to monetize
-          their podcasts with branded in-stream ads, the easy way."
+          content="Join 1,000+ entrepreneurs getting curated startup ideas in
+          million dollar niches. Launch your empire this weekend."
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/T1Zv1ZY5/poderly.png"
+          content="https://i.postimg.cc/k4nYPFyF/Untitled-design-6.png"
         />
       </Head>
    
