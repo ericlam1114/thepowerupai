@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <div className="container mx-auto md:lg:h-screen flex flex-col md:flex-row justify-between items-center ">
       <div className="flex flex-col gap-5">
-        <p className="text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
+        <p className="text-md md:lg:text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           Newsletter
         </p>
         <p className="text-5xl font-bold sm:w-full md:lg:w-4/6 md:lg:text-6xl">
