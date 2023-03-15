@@ -47,8 +47,8 @@ const Hero = () => {
         <p className="text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           Newsletter
         </p>
-        <p className="text-6xl font-bold">
-          Startup Ideas, <br /> Fresh Weekly{" "}
+        <p className="text-6xl font-bold sm:w-full md:lg:w-4/6">
+          Startup Ideas, Fresh Weekly{" "}
         </p>
         <p className="text-base md:lg:w-1/2">
           Join 1,000+ entrepreneurs getting curated startup ideas in
