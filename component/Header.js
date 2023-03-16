@@ -5,10 +5,10 @@ function Header() {
   return (
     <div>
       <Head>
-        <title>Startup Ideas, Fresh Weekly</title>
+        <title>Startup Ideas, Sent Weekly</title>
 
-        <meta name="description" content="Startup Ideas, Fresh Weekly" key="desc" />
-        <meta property="og:title" content="Startup Ideas, Fresh Weekly" />
+        <meta name="description" content="Startup Ideas, Sent Weekly" key="desc" />
+        <meta property="og:title" content="Startup Ideas, Sent Weekly" />
         <meta
           property="og:description"
           content="Join 1,000+ entrepreneurs getting curated startup ideas in

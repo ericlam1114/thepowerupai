@@ -48,7 +48,7 @@ const Hero = () => {
           Newsletter
         </p>
         <p className="text-5xl font-bold sm:w-full md:lg:w-4/6 md:lg:text-6xl">
-          Startup Ideas, Fresh Weekly{" "}
+          Startup Ideas, Sent Weekly{" "}
         </p>
         <p className="text-base md:lg:w-1/2">
           Join 1,000+ entrepreneurs getting curated startup ideas in
