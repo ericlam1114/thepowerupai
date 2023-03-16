@@ -16,7 +16,7 @@ function Header() {
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/k4nYPFyF/Untitled-design-6.png"
+          content="https://i.postimg.cc/pTcnnb6p/Exploding-Ideas.png"
         />
       </Head>
    
