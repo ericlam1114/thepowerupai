@@ -29,7 +29,7 @@ const Popup = ({ onClose }) => {
    >
      
          <div className="bg-white rounded-lg p-6 max-w-md text-center" ref={overlayRef}>
-        <h2 className="text-2xl font-bold mb-4">Share with friends!</h2>
+        <h2 className="text-2xl font-bold mb-4">Will you share it?</h2>
         <div className="flex justify-center gap-6">
           <button
             onClick={() => {
