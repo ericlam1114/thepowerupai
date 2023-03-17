@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
+import Popup from "./Popup";
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
 
@@ -10,6 +11,8 @@ const mailchimp = require("@mailchimp/mailchimp_marketing");
 const Hero = () => {
   const [formData, setFormData] = useState({});
   const [email, setEmail] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
+
 
   const handleInputChange = (event) => {
     setEmail(event.target.value);
@@ -36,6 +39,8 @@ const Hero = () => {
         .then((response) => console.log(response));
         alert('email submitted successfully')
       setEmail("");
+setShowPopup(true);
+
     } catch (err) {
       console.error(err);
       alert("Error subscribing. Please try again later.");
@@ -43,6 +48,7 @@ const Hero = () => {
   };
   return (
     <div className="container mx-auto md:lg:h-screen flex flex-col md:flex-row justify-between items-center ">
+     {showPopup && <Popup onClose={() => setShowPopup(false)} />}
       <div className="flex flex-col gap-5">
         <p className="text-md md:lg:text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           Newsletter
