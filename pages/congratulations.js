@@ -42,8 +42,12 @@ const Congratulations = () => {
        
           {showPopup && <Popup onClose={closePopup} />}
       </header>
-
       <main className="flex flex-col items-center justify-center flex-grow text-center -mt-72">
+      <img
+          src="/laying.png"
+          alt="you're subscribed"
+          className="max-w-sm scale-50 -mb-40 -mt-20"
+        />
         <h1 className="text-4xl mt-12 text-black font-bold">
           Congratulations!
         </h1>
@@ -53,17 +57,13 @@ const Congratulations = () => {
         <p className="text-xl mt-4 text-gray-700">
           You’ll see us in your inbox on Sundays.
         </p> 
-        {/* <img
-          src="/laying.png"
-          alt="you're subscribed"
-          className="max-w-sm scale-50 -mb-20 -mt-20"
-        /> */}
         <div className="mt-12 text-sm text-gray-600 leading-7 p-4 border border-gray-300 rounded-md shadow-sm bg-gray-100">
           <p>
           👉Note: Today be on the lookout for a welcome email from us. If it
             lands in your spam, <strong>move it to your inbox</strong> for future deliverabilty.
           </p>
         </div>
+       
       </main>
       {/* <footer className="mt-12 mb-4">
         <Link href="/">
