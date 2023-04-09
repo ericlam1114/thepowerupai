@@ -47,7 +47,7 @@ const Congratulations = () => {
         <h1 className="text-4xl mt-12 text-black font-bold">
           Congratulations!
         </h1>
-        <h2 className="text-8xl mt-4 text-black font-extrabold">
+        <h2 className="text-7xl mt-4 md:lg:text-8xl text-black font-extrabold">
           You're In
         </h2>
         <p className="text-xl mt-4 text-gray-700">
