@@ -6,7 +6,7 @@ const Popup = ({ onClose }) => {
   const overlayRef = useRef(null);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText('www.explodingideas.co');
     setCopied(true);
   };
 
@@ -29,7 +29,7 @@ const Popup = ({ onClose }) => {
    >
      
          <div className="bg-white rounded-lg p-6 max-w-md text-center" ref={overlayRef}>
-        <h2 className="text-2xl font-bold mb-4">Will you share it?</h2>
+        <h2 className="text-2xl font-bold mb-4">Share with a friend</h2>
         <div className="flex justify-center gap-6">
           <button
             onClick={() => {
@@ -50,7 +50,7 @@ const Popup = ({ onClose }) => {
               window.open(
                 `https://twitter.com/intent/tweet?text=${encodeURIComponent(
                   "Check out this website!"
-                )}&url=${encodeURIComponent(window.location.href)}`,
+                )}&url=www.explodingideas.co`,
                 "popup",
                 "width=600,height=500"
               );
@@ -62,7 +62,7 @@ const Popup = ({ onClose }) => {
           <a
             href={`mailto:?subject=${encodeURIComponent(
               "Check out this website!"
-            )}&body=${encodeURIComponent(window.location.href)}`}
+            )}&body=www.explodingideas.co`}
             className="text-red-600 hover:text-red-800"
           >
             <BsEnvelope size={32} />
