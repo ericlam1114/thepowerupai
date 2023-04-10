@@ -5,6 +5,8 @@ import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 // import Popup from "./Popup";
 import { useRouter } from 'next/router'; // Import useRouter
+import Header from '../component/Header.js';
+
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
 const handleClick = () => {

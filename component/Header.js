@@ -25,13 +25,13 @@ function Header() {
         />
         <link rel="icon" href="/favicon.ico" />
 
-        <Link href="/">
+        {/* <Link href="/">
           <img
             src="/explodingideaslogo.png"
             alt="Exploding Ideas"
             className="md:lg:max-w-sm scale-50 mb-32 -mt-10 md:lg:mb-0 md:lg:mt-0"
           />
-        </Link>
+        </Link> */}
       </Head>
 
       <div class="flex flex-col justify-center -mt-8 items-center md:items-baseline -mb-10 md:-mb-56">

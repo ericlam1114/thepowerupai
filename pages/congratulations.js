@@ -32,7 +32,7 @@ const Congratulations = () => {
 
   return (
     <div className="mx-auto min-h-screen flex flex-col px-4 font-sans bg-gradient-to-r from-yellow-300 to-yellow-50">
-    <Header className="-mt-14 px-4 md:lg:flex md:lg:justify-none"></Header>
+    <Link href='/'><Header className="-mt-14 px-4 md:lg:flex md:lg:justify-none"></Header></Link>
     {/* <header className="md:lg:max-w-sm scale-50 mb-32 -mt-10 md:lg:mb-0 md:lg:mt-0">
         <Link href="/">
           <img
