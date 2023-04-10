@@ -25,6 +25,8 @@ const handleClick = () => {
 const Hero = () => {
   const [formData, setFormData] = useState({});
   const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
   // const [showPopup, setShowPopup] = useState(false);
 
   const router = useRouter(); // Initialize useRouter
@@ -36,6 +38,10 @@ const Hero = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!email) {
+      alert("Please enter your email.");
+      return;
+    }
     try {
       console.log(formData);
       // appendSpreadsheet(formData)
@@ -84,6 +90,7 @@ const Hero = () => {
               onChange={handleInputChange}
               className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
             />
+
             <button
               onClick={handleClick}
               className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium"
