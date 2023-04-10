@@ -7,7 +7,9 @@ import axios from "axios";
 import { useRouter } from 'next/router'; // Import useRouter
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
-
+const handleClick = () => {
+  fbq.event('Purchase', { currency: 'USD', value: 10 })
+}
 
 const Hero = () => {
   const [formData, setFormData] = useState({});
@@ -73,7 +75,7 @@ const Hero = () => {
               onChange={handleInputChange}
               className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
             />
-            <button className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium">
+            <button onClick={handleClick} className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium">
               Subscribe{" "}
             </button>
           </div>
