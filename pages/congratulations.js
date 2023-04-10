@@ -6,6 +6,7 @@ import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { RiMailSendLine } from "react-icons/ri";
 import { BiLink } from "react-icons/bi";
 import Popup from "../component/Popup.js";
+import Header from '../component/Header.js';
 
 const Congratulations = () => {
   //   const [showShare, setShowShare] = useState(false);
@@ -31,22 +32,23 @@ const Congratulations = () => {
 
   return (
     <div className="mx-auto min-h-screen flex flex-col px-4 font-sans bg-gradient-to-r from-yellow-300 to-yellow-50">
-    <header className="-mt-14 px-4 md:lg:flex md:lg:justify-none">
+    <Header className="-mt-14 px-4 md:lg:flex md:lg:justify-none"></Header>
+    {/* <header className="md:lg:max-w-sm scale-50 mb-32 -mt-10 md:lg:mb-0 md:lg:mt-0">
         <Link href="/">
           <img
             src="/explodingideaslogo.png"
             alt="Exploding Ideas"
-            className="md:lg:max-w-sm scale-50 mb-32 -mt-10 md:lg:mb-0 md:lg:mt-0"
+            className=""
           />
         </Link>
        
+      </header> */}
           {showPopup && <Popup onClose={closePopup} />}
-      </header>
       <main className="flex flex-col items-center justify-center flex-grow text-center -mt-72">
       <img
           src="/laying.png"
           alt="you're subscribed"
-          className="max-w-sm scale-50 -mb-40 -mt-20"
+          className="max-w-sm scale-50 -mb-40 mt-44 "
         />
         <h1 className="text-4xl mt-12 text-black font-bold">
           Congratulations!
