@@ -48,7 +48,7 @@ const Congratulations = () => {
       <img
           src="/laying.png"
           alt="you're subscribed"
-          className="max-w-sm scale-50 -mb-40 mt-44 "
+          className="max-w-sm scale-50 -mb-40 mt-40 md:lg:mt-44 "
         />
         <h1 className="text-4xl mt-12 text-black font-bold">
           Congratulations!
