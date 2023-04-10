@@ -13,7 +13,7 @@ const mailchimp = require("@mailchimp/mailchimp_marketing");
 const handleClick = () => {
   const eventData = {
     content_name: "Newsletter Subscribe",
-    content_category: "Button Interaction",
+    content_category: "Button Interactions",
   };
 
   // Check if the Facebook Pixel is available
