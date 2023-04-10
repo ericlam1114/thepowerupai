@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+    
       {/* Global Site Code Pixel - Facebook Pixel */}
       <Script
         id="fb-pixel"
