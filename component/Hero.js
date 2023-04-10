@@ -4,14 +4,22 @@ import { BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 // import Popup from "./Popup";
-import { useRouter } from 'next/router'; // Import useRouter
-import Header from '../component/Header.js';
+import { useRouter } from "next/router"; // Import useRouter
+import Header from "../component/Header.js";
 
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
 const handleClick = () => {
-  fbq.event('Purchase', { currency: 'USD', value: 10 })
-}
+  const eventData = {
+    content_name: "Newsletter Subscribe",
+    content_category: "Button Interaction",
+  };
+
+  // Check if the Facebook Pixel is available
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("trackCustom", "ButtonClick", eventData);
+  }
+};
 
 const Hero = () => {
   const [formData, setFormData] = useState({});
@@ -19,7 +27,6 @@ const Hero = () => {
   // const [showPopup, setShowPopup] = useState(false);
 
   const router = useRouter(); // Initialize useRouter
-
 
   const handleInputChange = (event) => {
     setEmail(event.target.value);
@@ -44,10 +51,9 @@ const Hero = () => {
           data
         )
         .then((response) => console.log(response));
-        // alert('email submitted successfully')
+      // alert('email submitted successfully')
       setEmail("");
-      router.push('/congratulations');
-
+      router.push("/congratulations");
     } catch (err) {
       console.error(err);
       alert("Error subscribing. Please try again later.");
@@ -55,7 +61,7 @@ const Hero = () => {
   };
   return (
     <div className="container mx-auto md:lg:h-screen flex flex-col md:flex-row justify-between items-center ">
-     {/* {showPopup && <Popup onClose={() => setShowPopup(false)} />} */}
+      {/* {showPopup && <Popup onClose={() => setShowPopup(false)} />} */}
       <div className="flex flex-col gap-5">
         <p className="text-md md:lg:text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           Newsletter
@@ -64,10 +70,10 @@ const Hero = () => {
           Startup Ideas, Sent Weekly{" "}
         </p>
         <p className="text-base md:lg:w-1/2">
-          Join 1,000+ entrepreneurs getting curated startup ideas in
-         million dollar niches. Launch your empire this weekend.
+          Join 1,000+ entrepreneurs getting curated startup ideas in million
+          dollar niches. Launch your empire this weekend.
         </p>
-        
+
         <form onSubmit={handleSubmit}>
           <div className="flex gap-5">
             <input
@@ -77,20 +83,28 @@ const Hero = () => {
               onChange={handleInputChange}
               className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
             />
-            <button onClick={handleClick} className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium">
+            <button
+              onClick={handleClick}
+              className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium"
+            >
               Subscribe{" "}
             </button>
           </div>
         </form>
         <div className="">
-          <p className="body-md  pt-4 -mb-4 lg:body-lg text-center md:text-left opacity-60 md:lg:-mb-6">Read by ex-employees from</p>
-          <img src="/startupswhoread.png" className="max-w-sm lg:max-w-sm -pt-2 opacity-60 " alt="" />
-      
+          <p className="body-md  pt-4 -mb-4 lg:body-lg text-center md:text-left opacity-60 md:lg:-mb-6">
+            Read by ex-employees from
+          </p>
+          <img
+            src="/startupswhoread.png"
+            className="max-w-sm lg:max-w-sm -pt-2 opacity-60 "
+            alt=""
+          />
         </div>
         {/* <div className="flex gap-5"> */}
-          {/* <BsTwitter className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" /> */}
-          {/* <RiInstagramFill className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
-          {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
+        {/* <BsTwitter className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" /> */}
+        {/* <RiInstagramFill className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
+        {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
         {/* </div> */}
       </div>
       <img src="/startupideas.png" className="w-3/5 lg:max-w-sm" alt="" />
