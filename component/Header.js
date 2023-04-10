@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { FB_PIXEL_ID } from "../lib/fpixel";
 
 function Header() {
   return (
@@ -32,6 +33,15 @@ function Header() {
             className="md:lg:max-w-sm scale-50 mb-32 -mt-10 md:lg:mb-0 md:lg:mt-0"
           />
         </Link> */}
+
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+          />
+        </noscript>
       </Head>
 
       <div class="flex flex-col justify-center -mt-8 items-center md:items-baseline -mb-10 md:-mb-56">
