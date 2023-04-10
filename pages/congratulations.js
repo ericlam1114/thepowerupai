@@ -57,7 +57,7 @@ const Congratulations = () => {
           You're In
         </h2>
         <p className="text-xl mt-4 text-gray-700">
-          You’ll see us in your inbox on Sundays.
+          You’ll see us in your sinbox on Sundays.
         </p> 
         <div className="mt-12 text-sm text-gray-600 leading-7 p-4 border border-gray-300 rounded-md shadow-sm bg-gray-100">
           <p>
