@@ -9,6 +9,7 @@ import Header from "../component/Header.js";
 
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
+// handle click
 const handleClick = () => {
   const eventData = {
     content_name: "Newsletter Subscribe",
