@@ -37,7 +37,7 @@ function Header() {
       <div class="flex flex-col justify-center -mt-8 items-center md:items-baseline -mb-10 md:-mb-56">
         <img
           src="/explodingideaslogo.png"
-          className="max-w-sm scale-50 -mt-20 -mb-10"
+          className="max-w-sm scale-50 -mt-20 -mb-10 md:mb-28 lg:mb-0 xl:-mb-10"
           alt="Startup Ideas, Sent Weekly"
         />
       </div>
