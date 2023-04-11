@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta name="facebook-domain-verification" content="w6wkduji9fdvlrnk9784ziw2roxq9q" />
           <script
             dangerouslySetInnerHTML={{
               __html: `
