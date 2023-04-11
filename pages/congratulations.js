@@ -6,7 +6,7 @@ import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { RiMailSendLine } from "react-icons/ri";
 import { BiLink } from "react-icons/bi";
 import Popup from "../component/Popup.js";
-import Header from '../component/Header.js';
+import Header from "../component/Header.js";
 
 const Congratulations = () => {
   //   const [showShare, setShowShare] = useState(false);
@@ -16,8 +16,14 @@ const Congratulations = () => {
     setShowPopup(false);
   };
 
-
   useEffect(() => {
+    // Add the "Subscribe" event when the component is mounted
+    window.fbq &&
+      window.fbq("track", "Subscribe", {
+        value: "0.00",
+        currency: "USD",
+        predicted_ltv: "0.00",
+      });
     // Set a timeout to show the popup after 2 seconds
     const timeoutId = setTimeout(() => {
       setShowPopup(true);
@@ -29,11 +35,12 @@ const Congratulations = () => {
     };
   }, []); // The empty dependency array ensures this effect runs only once on mount
 
-
   return (
     <div className="mx-auto min-h-screen flex flex-col px-4 font-sans bg-gradient-to-r from-yellow-300 to-yellow-50">
-    <Link href='/'><Header className="-mt-14 px-4 md:lg:flex md:lg:justify-none"></Header></Link>
-    {/* <header className="md:lg:max-w-sm scale-50 mb-32 -mt-10 md:lg:mb-0 md:lg:mt-0">
+      <Link href="/">
+        <Header className="-mt-14 px-4 md:lg:flex md:lg:justify-none"></Header>
+      </Link>
+      {/* <header className="md:lg:max-w-sm scale-50 mb-32 -mt-10 md:lg:mb-0 md:lg:mt-0">
         <Link href="/">
           <img
             src="/explodingideaslogo.png"
@@ -43,9 +50,9 @@ const Congratulations = () => {
         </Link>
        
       </header> */}
-          {showPopup && <Popup onClose={closePopup} />}
+      {showPopup && <Popup onClose={closePopup} />}
       <main className="flex flex-col items-center justify-center flex-grow text-center -mt-72">
-      <img
+        <img
           src="/laying.png"
           alt="you're subscribed"
           className="max-w-sm scale-50 -mb-40 mt-32 md:lg:mt-44 "
@@ -58,14 +65,14 @@ const Congratulations = () => {
         </h2>
         <p className="text-xl mt-4 text-gray-700">
           You’ll see us in your inbox on Sundays.
-        </p> 
+        </p>
         <div className="mt-12 text-sm text-gray-600 leading-7 p-4 border border-gray-300 rounded-md shadow-sm bg-gray-100">
           <p>
-          👉Note: Today be on the lookout for a welcome email from us. If it
-            lands in your spam, <strong>move it to your inbox</strong> for future deliverabilty.
+            👉Note: Today be on the lookout for a welcome email from us. If it
+            lands in your spam, <strong>move it to your inbox</strong> for
+            future deliverabilty.
           </p>
         </div>
-       
       </main>
       {/* <footer className="mt-12 mb-4">
         <Link href="/">

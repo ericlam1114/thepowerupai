@@ -18,7 +18,7 @@ const handleClick = () => {
 
   // Check if the Facebook Pixel is available
   if (typeof window !== "undefined" && window.fbq) {
-    window.fbq("track", "Subscribe", eventData);
+    window.fbq("trackCustom", "ButtonClick", eventData);
   }
 };
 
