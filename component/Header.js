@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { FB_PIXEL_ID } from "../lib/fpixel";
+// import { FB_PIXEL_ID } from "../lib/fpixel";
 
 function Header() {
   return (

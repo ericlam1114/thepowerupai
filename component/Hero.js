@@ -16,10 +16,7 @@ const handleClick = () => {
     content_category: "Button Interactions",
   };
 
-  // Check if the Facebook Pixel is available
-  if (typeof window !== "undefined" && window.fbq) {
-    window.fbq("track", "Subscribe", eventData);
-  }
+
 };
 
 const Hero = () => {
