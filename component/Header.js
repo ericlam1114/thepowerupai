@@ -26,6 +26,32 @@ function Header() {
         />
         <link rel="icon" href="/favicon.ico" />
 
+        <title>Startup Ideas, Sent Weekly</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.explodingideas.co/" />
+        <meta property="og:title" content="Startup Ideas, Sent Weekly" />
+        <meta
+          property="og:description"
+          content="Startup Ideas, Sent Weekly. Join 1,000+ entrepreneurs getting curated startup ideas in million dollar niches."
+        />
+        <meta
+          property="og:image"
+          content="https://i.postimg.cc/pTcnnb6p/Exploding-Ideas.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.explodingideas.co/" />
+        <meta property="twitter:title" content="Startup Ideas, Sent Weekly" />
+        <meta
+          property="twitter:description"
+          content="Startup Ideas, Sent Weekly. Join 1,000+ entrepreneurs getting curated startup ideas in million dollar niches."
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.postimg.cc/pTcnnb6p/Exploding-Ideas.png"
+        ></meta>
+
         {/* <Link href="/">
           <img
             src="/explodingideaslogo.png"
@@ -33,8 +59,6 @@ function Header() {
             className="md:lg:max-w-sm scale-50 mb-32 -mt-10 md:lg:mb-0 md:lg:mt-0"
           />
         </Link> */}
-
-        
       </Head>
 
       <div class="flex flex-col justify-center -mt-8 items-center md:items-baseline -mb-10 md:-mb-56">
