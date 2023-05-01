@@ -1,39 +1,27 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
-// import Popup from "./Popup";
-import { useRouter } from "next/router"; // Import useRouter
+import { useRouter } from "next/router";
 import Header from "../component/Header.js";
-
-const mailchimp = require("@mailchimp/mailchimp_marketing");
-
-// handle click
-const handleClick = () => {
-  const eventData = {
-    content_name: "Newsletter Subscribe",
-    content_category: "Button Interactions",
-  };
-
-
-};
 
 const Hero = () => {
   const [formData, setFormData] = useState({});
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
 
-  // const [showPopup, setShowPopup] = useState(false);
+  const router = useRouter();
 
-  const router = useRouter(); // Initialize useRouter
+  useEffect(() => {
+    setEmail("");
+  }, []);
 
   const handleInputChange = (event) => {
     setEmail(event.target.value);
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email) {
       alert("Please enter your email.");
@@ -41,21 +29,18 @@ const Hero = () => {
     }
     try {
       console.log(formData);
-      // appendSpreadsheet(formData)
-      // setEmail('');
-      // console.log(email);
 
       const data = {
-        Email: email,
+        email: email,
       };
 
-      axios
-        .post(
-          "https://sheet.best/api/sheets/bab566a2-d238-4430-a4f6-77c8bd90f773",
-          data
-        )
-        .then((response) => console.log(response));
-      // alert('email submitted successfully')
+      const response = await axios.post("/api/subscribe", data, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log(response);
       setEmail("");
       router.push("/congratulations");
     } catch (err) {
@@ -74,8 +59,8 @@ const Hero = () => {
           Startup Ideas, Sent Weekly{" "}
         </p>
         <p className="text-base md:lg:w-1/2">
-          Join 1,000+ elite entrepreneurs getting curated startup ideas in million
-          dollar niches. Launch your empire this weekend.
+          Join 1,000+ elite entrepreneurs getting curated startup ideas in
+          million dollar niches. Launch your empire this weekend.
         </p>
 
         <form onSubmit={handleSubmit}>
@@ -89,7 +74,7 @@ const Hero = () => {
             />
 
             <button
-              onClick={handleClick}
+              // onClick={handleClick}
               className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium"
             >
               Subscribe{" "}
