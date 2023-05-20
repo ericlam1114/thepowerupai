@@ -22,7 +22,7 @@ function Header() {
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/pTcnnb6p/Exploding-Ideas.png"
+          content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"
         />
         <link rel="icon" href="/favicon.ico" />
 
@@ -49,7 +49,7 @@ function Header() {
         />
         <meta
           property="twitter:image"
-          content="https://i.postimg.cc/pTcnnb6p/Exploding-Ideas.png"
+          content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"
         ></meta>
 
         {/* <Link href="/">
