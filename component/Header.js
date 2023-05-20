@@ -11,7 +11,7 @@ function Header() {
 
         <meta
           name="description"
-          content="Startup Ideas, Sent Weekly. Join 1,000+ entrepreneurs getting curated startup ideas in million dollar niches."
+          content="Join 1,000+ entrepreneurs getting curated startup ideas in million dollar niches."
           key="desc"
         />
         <meta property="og:title" content="Startup Ideas, Sent Weekly" />
@@ -33,7 +33,7 @@ function Header() {
         <meta property="og:title" content="Startup Ideas, Sent Weekly" />
         <meta
           property="og:description"
-          content="Startup Ideas, Sent Weekly. Join 1,000+ entrepreneurs getting curated startup ideas in million dollar niches."
+          content="Join 1,000+ entrepreneurs getting curated startup ideas in million dollar niches."
         />
         <meta
           property="og:image"
@@ -45,7 +45,7 @@ function Header() {
         <meta property="twitter:title" content="Startup Ideas, Sent Weekly" />
         <meta
           property="twitter:description"
-          content="Startup Ideas, Sent Weekly. Join 1,000+ entrepreneurs getting curated startup ideas in million dollar niches."
+          content="Join 1,000+ entrepreneurs getting curated startup ideas in million dollar niches."
         />
         <meta
           property="twitter:image"
