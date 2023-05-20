@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          {/* Comment out the GTM script
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -14,8 +15,10 @@ class MyDocument extends Document {
               })(window,document,'script','dataLayer','GTM-M3LGPKD');`,
             }}
           />
+          */}
         </Head>
         <body>
+          {/* Comment out the GTM noscript
           <noscript>
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-M3LGPKD"
@@ -24,6 +27,7 @@ class MyDocument extends Document {
               style={{ display: "none", visibility: "hidden" }}
             ></iframe>
           </noscript>
+          */}
           <Main />
           <NextScript />
         </body>
