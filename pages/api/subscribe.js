@@ -8,7 +8,7 @@ const handler = async (req, res) => {
     if (req.method === 'POST') {
       try {
         const response = await axios.post(
-          'https://api.beehiiv.com/v2/publications/pub_1f3c50eb-659b-4ec3-b6cc-3b03f584b96d/subscriptions',
+          'https://api.beehiiv.com/v2/publications/pub_42da6bd2-3c4a-46cc-906d-960b21fa8f3d/subscriptions',
           req.body,
           {
             headers: {

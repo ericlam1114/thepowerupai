@@ -36,7 +36,7 @@ const Congratulations = () => {
   }, []); // The empty dependency array ensures this effect runs only once on mount
 
   return (
-    <div className="mx-auto min-h-screen flex flex-col px-4 font-sans bg-gradient-to-r from-yellow-300 to-yellow-50">
+    <div className="mx-auto min-h-screen flex flex-col px-4 font-sans bg-gradient-to-r from-black to-black">
       <Link href="/">
         <Header className="-mt-14 px-4 md:lg:flex md:lg:justify-none"></Header>
       </Link>
@@ -53,17 +53,17 @@ const Congratulations = () => {
       {showPopup && <Popup onClose={closePopup} />}
       <main className="flex flex-col items-center justify-center flex-grow text-center -mt-72">
         <img
-          src="/laying.png"
+          src="/poweruplogo.png"
           alt="you're subscribed"
           className="max-w-sm scale-50 -mb-40 mt-32 md:lg:mt-44 "
         />
-        <h1 className="text-4xl mt-12 text-black font-bold">
+        <h1 className="text-4xl mt-12 text-white font-bold">
           Congratulations!
         </h1>
-        <h2 className="text-7xl mt-4 md:lg:text-8xl text-black font-extrabold">
+        <h2 className="text-7xl mt-4 md:lg:text-8xl text-white font-extrabold">
           You're In
         </h2>
-        <p className="text-xl mt-4 text-gray-700">
+        <p className="text-xl mt-4 text-white">
           You’ll see us in your inbox on Sundays.
         </p>
         <div className="mt-12 text-sm text-gray-600 leading-7 p-4 border border-gray-300 rounded-md shadow-sm bg-gray-100">

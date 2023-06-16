@@ -49,18 +49,17 @@ const Hero = () => {
     }
   };
   return (
-    <div className="container mx-auto md:lg:h-screen flex flex-col md:flex-row justify-between items-center ">
+    <div className="container px-2 md:mx-auto md:lg:mx-auto md:lg:h-screen flex flex-col md:flex-row justify-between items-center ">
       {/* {showPopup && <Popup onClose={() => setShowPopup(false)} />} */}
-      <div className="flex flex-col gap-5">
-        <p className="text-md md:lg:text-lg font-medium bg-yellow-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
+      <div className="flex flex-col gap-5 ">
+        <p className="text-md md:lg:text-lg font-medium bg-gray-100 text-black-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           Newsletter
         </p>
-        <p className="text-5xl font-bold sm:w-full md:lg:w-4/6 md:lg:text-6xl">
-          Startup Ideas, Sent Weekly{" "}
+        <p className="text-5xl text-white font-bold sm:w-full md:w-3/6 lg:w-3/6 md:lg:text-6xl">
+         Your AI Edge, Every Sunday{" "}
         </p>
-        <p className="text-base md:lg:w-1/2">
-          Join 1,000+ elite entrepreneurs getting curated startup ideas in
-          million dollar niches. Launch your empire this weekend.
+        <p className="text-base text-white  md:lg:w-2/5 ">
+        Join 12,000+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox.
         </p>
 
         <form onSubmit={handleSubmit}>
@@ -75,21 +74,21 @@ const Hero = () => {
 
             <button
               // onClick={handleClick}
-              className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium"
+              className="px-6 py-3 bg-gradient-to-r from-yellow-300 to-yellow-400 text-black rounded-lg hover:scale-95 duration-300 transition  shadow-xl font-medium"
             >
               Subscribe{" "}
             </button>
           </div>
         </form>
         <div className="">
-          <p className="body-md  pt-4 -mb-4 lg:body-lg text-center md:text-left opacity-60 md:lg:-mb-6">
-            Read by ex-employees from
+          <p className="body-md text-white   pt-4 -mb-4 lg:body-lg text-center md:text-left opacity-60 md:lg:-mb-6">
+            Read by employees from
           </p>
           <img
-            src="/startupswhoread.png"
-            className="max-w-sm lg:max-w-sm -pt-2 opacity-60 "
-            alt=""
-          />
+          src="/startupswhoread.png"
+          className="max-w-full lg:max-w-sm -pt-2 opacity-60 "
+          alt="startups that read explodingideas"
+        />
         </div>
         {/* <div className="flex gap-5"> */}
         {/* <BsTwitter className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" /> */}
@@ -97,7 +96,7 @@ const Hero = () => {
         {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
         {/* </div> */}
       </div>
-      <img src="/startupideas.png" className="w-3/5 lg:max-w-sm" alt="" />
+      <img src="/poweruplogo.png" className="max-w-full md:w-3/5 lg:max-w-sm" alt="mascot" />
     </div>
   );
 };
