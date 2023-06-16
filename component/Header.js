@@ -8,23 +8,23 @@ function Header() {
     <div>
       <Head>
    
-<title>Startup Ideas, Sent Weekly</title>
-<meta name="title" content="Startup Ideas, Sent Weekly"/>
-<meta name="description" content="Join 1,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
+<title>Your AI Edge, Every Sunday</title>
+<meta name="title" content="Your AI Edge, Every Sunday"/>
+<meta name="description" content="Join 12,000+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox."/>
 
 
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://www.explodingideas.co/"/>
-<meta property="og:title" content="Startup Ideas, Sent Weekly"/>
-<meta property="og:description" content="Join 1,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
-<meta property="og:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/>
+<meta property="og:url" content="https://www.thepowerup.ai/"/>
+<meta property="og:title" content="Your AI Edge, Every Sunday"/>
+<meta property="og:description" content="Join 12,000+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox."/>
+<meta property="og:image" content="https://i.postimg.cc/MTX5T7mc/Exploding-Ideas.png"/>
 
 
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:url" content="https://www.explodingideas.co/"/>
-<meta property="twitter:title" content="Startup Ideas, Sent Weekly"/>
-<meta property="twitter:description" content="Join 1,000+ elite entrepreneurs getting curated startup ideas in million dollar niches."/>
-<meta property="twitter:image" content="https://i.postimg.cc/bNrMHZLh/Exploding-Ideas-copy.png"/>
+<meta property="twitter:url" content="https://www.thepowerup.ai/"/>
+<meta property="twitter:title" content="Your AI Edge, Every Sunday"/>
+<meta property="twitter:description" content="Join 12,000+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox."/>
+<meta property="twitter:image" content="https://i.postimg.cc/MTX5T7mc/Exploding-Ideas.png"/>
 
 
   
