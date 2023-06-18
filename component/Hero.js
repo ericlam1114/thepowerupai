@@ -59,7 +59,7 @@ const Hero = () => {
          Your AI Edge, Every Sunday{" "}
         </p>
         <p className="text-base text-white  md:lg:w-2/5 ">
-        Join 12,000+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox.
+        Join 500+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox.
         </p>
 
         <form onSubmit={handleSubmit}>
