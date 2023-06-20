@@ -4,11 +4,18 @@ import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 import { useRouter } from "next/router";
 import Header from "../component/Header.js";
+import sparkloop from "sparkloop";
 
 const Hero = () => {
   const [formData, setFormData] = useState({});
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
+
+  const opts = {
+    scan_forms: false,
+  };
+
+  sparkloop("team_31aa1e31f0fd", opts);
 
   const router = useRouter();
 
@@ -34,6 +41,8 @@ const Hero = () => {
         email: email,
       };
 
+      SL.trackSubscriber(emailAddress);
+
       const response = await axios.post("/api/subscribe", data, {
         headers: {
           "Content-Type": "application/json",
@@ -56,10 +65,11 @@ const Hero = () => {
           Newsletter
         </p>
         <p className="text-5xl text-white font-bold sm:w-full md:w-3/6 lg:w-3/6 md:lg:text-6xl">
-         Your AI Edge, Every Sunday{" "}
+          Your AI Edge, Every Sunday{" "}
         </p>
         <p className="text-base text-white  md:lg:w-2/5 ">
-        Join 500+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox.
+          Join 500+ readers from Microsoft, Meta and Tesla getting the single
+          most productive new AI tool each week straight to their inbox.
         </p>
 
         <form onSubmit={handleSubmit}>
@@ -85,10 +95,10 @@ const Hero = () => {
             Read by employees from
           </p>
           <img
-          src="/startupswhoread.png"
-          className="max-w-full lg:max-w-sm -pt-2 opacity-60 "
-          alt="startups that read explodingideas"
-        />
+            src="/startupswhoread.png"
+            className="max-w-full lg:max-w-sm -pt-2 opacity-60 "
+            alt="startups that read explodingideas"
+          />
         </div>
         {/* <div className="flex gap-5"> */}
         {/* <BsTwitter className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" /> */}
@@ -96,7 +106,11 @@ const Hero = () => {
         {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
         {/* </div> */}
       </div>
-      <img src="/poweruplogo.png" className="max-w-full md:w-3/5 lg:max-w-sm" alt="mascot" />
+      <img
+        src="/poweruplogo.png"
+        className="max-w-full md:w-3/5 lg:max-w-sm"
+        alt="mascot"
+      />
     </div>
   );
 };
