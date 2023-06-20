@@ -4,21 +4,21 @@ import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 import { useRouter } from "next/router";
 import Header from "../component/Header.js";
-import sparkloop from "sparkloop";
+// import sparkloop from "sparkloop";
 
 const Hero = () => {
   const [formData, setFormData] = useState({});
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
 
-  const opts = {
-    scan_forms: false,
-  };
+  // const opts = {
+  //   scan_forms: false,
+  // };
 
   const router = useRouter();
 
   useEffect(() => {
-    sparkloop("team_31aa1e31f0fd", opts);
+    // sparkloop("team_31aa1e31f0fd", opts);
     setEmail("");
   }, []);
 
@@ -40,7 +40,7 @@ const Hero = () => {
         email: email,
       };
 
-      SL.trackSubscriber(emailAddress);
+      // SL.trackSubscriber(email);
 
       const response = await axios.post("/api/subscribe", data, {
         headers: {
