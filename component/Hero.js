@@ -15,11 +15,10 @@ const Hero = () => {
     scan_forms: false,
   };
 
-  sparkloop("team_31aa1e31f0fd", opts);
-
   const router = useRouter();
 
   useEffect(() => {
+    sparkloop("team_31aa1e31f0fd", opts);
     setEmail("");
   }, []);
 
