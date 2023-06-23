@@ -10,20 +10,20 @@ function Header() {
    
 <title>Your AI Edge, Every Sunday</title>
 <meta name="title" content="Your AI Edge, Every Sunday"/>
-<meta name="description" content="Join 12,000+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox."/>
+<meta name="description" content="Join 500+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox."/>
 
 
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.thepowerup.ai/"/>
 <meta property="og:title" content="Your AI Edge, Every Sunday"/>
-<meta property="og:description" content="Join 12,000+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox."/>
+<meta property="og:description" content="Join 500+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox."/>
 <meta property="og:image" content="https://i.postimg.cc/MTX5T7mc/Exploding-Ideas.png"/>
 
 
 <meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:url" content="https://www.thepowerup.ai/"/>
 <meta property="twitter:title" content="Your AI Edge, Every Sunday"/>
-<meta property="twitter:description" content="Join 12,000+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox."/>
+<meta property="twitter:description" content="Join 500+ readers from Microsoft, Meta and Tesla getting the single most productive new AI tool each week straight to their inbox."/>
 <meta property="twitter:image" content="https://i.postimg.cc/MTX5T7mc/Exploding-Ideas.png"/>
 
 
